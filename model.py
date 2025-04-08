@@ -114,7 +114,7 @@ class EarlyStopping:
         model.load_state_dict(self.best_model_state)
 
 # Load and preprocess data
-df = pd.read_csv('data.csv', header=0, index_col=0)
+df = pd.read_csv('your_data.csv', header=0, index_col=0)
 df['label'] = df['label'].replace({'ASD': 1, 'TD': 0})
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
