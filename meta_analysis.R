@@ -12,7 +12,7 @@ library(tidyverse)
 library(patchwork)
 
 # Import data from Excel file
-data_meta <- read_excel("data.xlsx")
+data_meta <- read.csv("data.csv")
 
 # Function to calculate Cohen's d
 calculate_d <- function(grp1m, grp2m, grp1sd, grp2sd, grp1n, grp2n) {
